@@ -14,7 +14,13 @@
     "lib": [
       "es2018",
       "dom"
-    ]
+    ],
+    "paths": {
+      "ngx-utils-cookies-port": [
+        "dist/ngx-utils-cookies-port/ngx-utils-cookies-port",
+        "dist/ngx-utils-cookies-port"
+      ]
+    }
   },
   "angularCompilerOptions": {
     "fullTemplateTypeCheck": true,

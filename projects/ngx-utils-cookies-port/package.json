@@ -1,0 +1,24 @@
+{
+  "name": "ngx-utils-cookies-port",
+  "version": "1.0.0",
+  "peerDependencies": {
+    "@angular/common": "^9.1.1",
+    "@angular/core": "^9.1.1",
+    "tslib": "^1.10.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/junekpavel/ngx-utils-cookies-port"
+  },
+  "author": "Pavel Junek",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/junekpavel/ngx-utils-cookies-port/issues"
+  },
+  "homepage": "https://github.com/junekpavel/ngx-utils-cookies-port#readme",
+  "keywords": [
+    "angular",
+    "ngx",
+    "cookies"
+  ]
+}
