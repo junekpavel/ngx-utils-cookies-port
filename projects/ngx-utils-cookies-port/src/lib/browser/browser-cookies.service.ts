@@ -39,7 +39,11 @@ export class BrowserCookiesService extends CookiesService {
         if (index > 0) {  // ignore nameless cookies
           name = safeDecodeURIComponent(cookie.substring(0, index));
           if (isBlank((lastCookies)[name])) {
-            (lastCookies)[name] = safeDecodeURIComponent(cookie.substring(index + 1));
+            const cookieValue = safeDecodeURIComponent(cookie.substring(index + 1));
+            // Ignore cookies stored with value 'undefined'
+            if (!isBlank(cookieValue) && cookieValue !== 'undefined') {
+              (lastCookies)[name] = cookieValue;
+            }
           }
         }
       }
